@@ -1,7 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Json from "./json.json";
 
 function App() {
+  console.log(Json);
   return (
     <div className="App">
       <header className="App-header">
