@@ -1,14 +1,16 @@
 import Json from "../../json.json";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import "../../styles/index.css";
+import errorLogo from "../../assets/404.svg";
+import { Link } from "react-router-dom";
 
 function App() {
   console.log(Json);
   return (
-    <main>
-      <Header></Header>
-      Error
-      <Footer></Footer>
+    <main className="error-page">
+      <img src={errorLogo} alt="Error Logo"></img>
+      <p>Oups la page demandé n'existe pas</p>
+
+      <Link to={""}>Retourner sur la page d'accueil</Link>
     </main>
   );
 }

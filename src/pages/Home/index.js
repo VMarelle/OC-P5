@@ -1,15 +1,19 @@
-import "./App.css";
 import Json from "../../json.json";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import Banner from "./Banner";
+import Card from "./Card";
 
 function App() {
   console.log(Json);
   return (
-    <main>
-      <Header></Header>
-      Accueil
-      <Footer></Footer>
+    <main className="kasa-home">
+      <Banner />
+      <div className="home-list">
+        <ul className="apartment-list">
+          {Json.map(({ id, cover, title }) => (
+            <Card key={id} cover={cover} title={title} />
+          ))}
+        </ul>
+      </div>
     </main>
   );
 }

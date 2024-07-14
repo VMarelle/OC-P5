@@ -11,7 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+li {
+  list-style-type: none;
+}
 .kasa-header {
   display: flex;
   justify-content: space-between;
@@ -28,7 +30,10 @@ nav a {
   font-weight: 500;
   line-height: 34.22px;
 }
-
+.kasa-home {
+  margin-left: 100px;
+  margin-right: 100px;
+}
 .kasa-footer {
   width: 100%;
   height: 210px;
@@ -41,4 +46,10 @@ nav a {
 
 .kasa-footer-elem {
   color: white;
+}
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
