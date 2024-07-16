@@ -1,12 +1,13 @@
 import Json from "../../json.json";
-import Banner from "./Banner";
-import Card from "./Card";
+import Banner from "../../components/Banner";
+import Card from "../../components/Card";
 
 function App() {
   console.log(Json);
   return (
     <main className="kasa-home">
       <Banner />
+      <h1>Chez vous, partout ailleurs</h1>
       <div className="home-list">
         <ul className="apartment-list">
           {Json.map(({ id, cover, title }) => (
