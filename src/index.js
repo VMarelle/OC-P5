@@ -19,7 +19,7 @@ reportWebVitals(); */
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./styles/index.css";
+import "./assets/SCSS/index.scss";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Error from "./pages/Error";

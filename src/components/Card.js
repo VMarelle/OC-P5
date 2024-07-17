@@ -1,6 +1,6 @@
 import "../styles/index.css";
 
-function Card({ id, title, cover }) {
+function Card({ title, cover }) {
   return (
     <li className="kasa-apartment-card">
       <img
