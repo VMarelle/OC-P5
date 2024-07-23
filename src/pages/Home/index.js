@@ -7,7 +7,6 @@ function App() {
   return (
     <main className="kasa-home">
       <Banner />
-      <h1>Chez vous, partout ailleurs</h1>
       <div className="home-list">
         <ul className="apartment-list">
           {Json.map(({ id, cover, title }) => (

@@ -6,7 +6,7 @@ import AboutList from "../../aboutList.json";
 function App() {
   console.log(Json);
   return (
-    <main>
+    <main className="kasa-home">
       <BannerAbout />
       <div className="about-list">
         <ul className="about-info-list">

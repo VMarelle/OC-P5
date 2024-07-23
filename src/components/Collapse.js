@@ -6,12 +6,12 @@ function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return isOpen ? (
-    <div className="info-bar">
+    <div className="info-bar-open">
       <h2>{title} </h2>
       <button className="toggle-button" onClick={() => setIsOpen(false)}>
         <img src={closeArrow} alt="close-arrow" />
       </button>
-      <p>{content} </p>
+      <div className="desc">{content}</div>
     </div>
   ) : (
     <div className="info-bar">

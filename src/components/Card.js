@@ -8,7 +8,7 @@ function Card({ title, cover }) {
         src={cover}
         alt={`${title} cover`}
       />
-      {title}
+      <h2 className="title-card">{title}</h2>
     </li>
   );
 }
