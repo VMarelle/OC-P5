@@ -160,6 +160,7 @@ body {
   }
 
   .info-bar {
+    position: relative;
     margin-bottom: 30px;
     width: 1023px;
     background-color: #ff6060;
@@ -167,16 +168,26 @@ body {
     h2 {
       padding-left: 15px;
       padding-top: 10px;
+      padding-bottom: 10px;
       color: #ffffff;
     }
     button {
+      position: absolute;
+      right: 0;
+      top: 10%;
       background-color: #ff6060;
       color: #ffffff;
       border: none;
       border-radius: 5px;
     }
+    &-open .desc {
+      padding: 15px;
+      max-height: 500px;
+      transition: max-height 0.25s ease-in;
+    }
   }
   .info-bar-open {
+    position: relative;
     margin-bottom: 30px;
     width: 1023px;
     background-color: #ff6060;
@@ -185,9 +196,13 @@ body {
     h2 {
       padding-left: 15px;
       padding-top: 10px;
+      padding-bottom: 10px;
       color: #ffffff;
     }
     button {
+      position: absolute;
+      right: 0;
+      top: 10%;
       background-color: #ff6060;
       color: #ffffff;
       border: none;
@@ -197,7 +212,10 @@ body {
   .desc {
     background-color: #f6f6f6;
     border-radius: 10px, 10px, 5px, 5px;
-    padding: 15px;
+    padding: 0;
+    max-height: 0;
+    transition: max-height 1s ease-out;
+    overflow: hidden;
   }
 }
 

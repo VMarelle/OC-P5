@@ -19,6 +19,7 @@ function Collapse({ title, content }) {
       <button className="toggle-button" onClick={() => setIsOpen(true)}>
         <img src={openArrow} alt="open-arrow" />
       </button>
+      <div className="desc"></div>
     </div>
   );
 }

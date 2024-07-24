@@ -1,5 +1,6 @@
 import "../styles/index.css";
 import headerLogo from "../assets/LogoOrangeBig.svg";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
