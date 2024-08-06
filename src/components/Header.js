@@ -8,9 +8,9 @@ function Header() {
       <img src={headerLogo} alt="kasa" className="kasa-header-logo" />
       <nav>
         <ul>
-          <a href="">Accueil</a>
+          <a href="/">Accueil</a>
 
-          <a href="">A propos</a>
+          <a href="/about">A propos</a>
         </ul>
       </nav>
     </header>

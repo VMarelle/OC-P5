@@ -138,6 +138,7 @@ body {
     }
     a {
       margin-bottom: 139px;
+      cursor: pointer;
     }
   }
 
@@ -168,22 +169,25 @@ body {
     h2 {
       padding-left: 15px;
       padding-top: 10px;
-      padding-bottom: 10px;
+      padding-bottom: 0%;
       color: #ffffff;
     }
     button {
       position: absolute;
       right: 0;
-      top: 10%;
+      top: 25%;
       background-color: #ff6060;
       color: #ffffff;
       border: none;
       border-radius: 5px;
+      cursor: pointer;
     }
     &-open .desc {
       padding: 15px;
       max-height: 500px;
       transition: max-height 0.25s ease-in;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
     }
   }
   .info-bar-open {
@@ -207,6 +211,7 @@ body {
       color: #ffffff;
       border: none;
       border-radius: 5px;
+      cursor: pointer;
     }
   }
   .desc {
@@ -217,11 +222,152 @@ body {
     transition: max-height 1s ease-out;
     overflow: hidden;
   }
-}
+  /***********************************/
+  /*********LOCATION PAGE********************/
+  /***********************************/
 
-/***********************************/
-/***********************************/
-/***********************************/
+  .carrousel .pictures {
+    object-fit: cover;
+    width: 1240px;
+    height: 415px;
+    margin: 300px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-radius: 25px;
+  }
+  .carrousel {
+    position: relative;
+    button {
+      position: absolute;
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .nextBtn {
+      position: absolute;
+      right: 19.3%;
+      bottom: 45%;
+      z-index: 1;
+    }
+    .prevBtn {
+      position: absolute;
+      left: 16%;
+      bottom: 45%;
+      z-index: 1;
+    }
+  }
+
+  .location-infos {
+    position: relative;
+    width: 1240px;
+    margin: 300px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .location-title {
+    font-weight: 500;
+    font-size: 36px;
+    color: #ff6060;
+    margin: 0;
+  }
+
+  .location-location {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+  .tags {
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    li {
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14px;
+      width: auto;
+      height: 25px;
+      border-radius: 10px;
+      background-color: #ff6060;
+      line-height: 19.96px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  .host {
+    p {
+      color: #ff6060;
+      font-weight: 500;
+      font-size: 18px;
+      width: 93px;
+      position: absolute;
+      right: 5%;
+      top: -15%;
+    }
+    img {
+      border-radius: 65px;
+      width: 64px;
+      height: 64px;
+      position: absolute;
+      right: 0;
+      top: -5%;
+    }
+  }
+
+  .rating {
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+    img {
+      padding-left: 10px;
+    }
+  }
+
+  .desc-location {
+    .info-bar {
+      width: 582px;
+    }
+    .info-bar-open {
+      width: 582px;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+  .infos-location {
+    width: 1240px;
+    margin: 0 300px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .equipement-list {
+    .info-bar {
+      width: 582px;
+    }
+    .info-bar-open {
+      width: 582px;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .desc li {
+      padding-bottom: 5px;
+    }
+  }
+
+  /***********************************/
+  /***********************************/
+  /***********************************/
+}
 
 @media all and (max-width: $mobile) {
   body {
