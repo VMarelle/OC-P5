@@ -10,8 +10,8 @@ function App() {
       <Banner />
       <div className="home-list">
         <ul className="apartment-list">
-          {Json.map(({ id, cover, title }) => (
-            <Link to={`/location/${id}`}>
+          {Json.map(({ id, cover, title }, index) => (
+            <Link key={"homeKey" + index} to={`/location/${id}`}>
               <Card key={id} cover={cover} title={title} />
             </Link>
           ))}

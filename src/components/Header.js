@@ -1,6 +1,6 @@
 import "../styles/index.css";
 import headerLogo from "../assets/LogoOrangeBig.svg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -8,9 +8,22 @@ function Header() {
       <img src={headerLogo} alt="kasa" className="kasa-header-logo" />
       <nav>
         <ul>
-          <a href="/">Accueil</a>
-
-          <a href="/about">A propos</a>
+          <NavLink
+            to="/"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            Accueil
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            A propos
+          </NavLink>
         </ul>
       </nav>
     </header>

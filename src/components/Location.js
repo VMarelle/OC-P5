@@ -14,8 +14,8 @@ const Location = () => {
         <p className="location-location">{item.location}</p>
       </div>
       <ul className="tags">
-        {item.tags.map((item) => (
-          <li>{item}</li>
+        {item.tags.map((item, index) => (
+          <li key={"locationLi" + index}>{item}</li>
         ))}
       </ul>
       <div className="host">

@@ -11,8 +11,8 @@ function Collapse({ title, content }) {
     } else {
       return (
         <ul>
-          {content.map((item) => (
-            <li>{item}</li>
+          {content.map((item, index) => (
+            <li key={"collapseLi" + index}>{item}</li>
           ))}
         </ul>
       );

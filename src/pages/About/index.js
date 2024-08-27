@@ -10,7 +10,7 @@ function App() {
       <BannerAbout />
       <div className="about-list">
         <ul className="about-info-list">
-          {AboutList.map(({ title, content }) => (
+          {AboutList.map(({ title, content, index }) => (
             <Collapse title={title} content={content} />
           ))}
         </ul>

@@ -16,7 +16,7 @@ function App() {
   }
   console.log(item);
   return (
-    <main>
+    <main className="kasa-home">
       <Carrousel images={item.pictures} />
       <Location />
       <div className="infos-location">
