@@ -8,7 +8,7 @@ function App() {
   return (
     <main className="error-page">
       <img src={errorLogo} alt="Error Logo"></img>
-      <p>Oups la page demandé n'existe pas</p>
+      <p>Oups ! La page que vous demandez n'existe pas.</p>
 
       <Link to={""}>Retourner sur la page d'accueil</Link>
     </main>
