@@ -1,4 +1,4 @@
-import Json from "../../json.json";
+import Json from "../../data/json.json";
 import Location from "../../components/Location";
 import Collapse from "../../components/Collapse";
 import { useParams } from "react-router-dom";
@@ -24,7 +24,7 @@ function App() {
           <Collapse title="Description" content={item.description} />
         </div>
         <div className="equipement-list">
-          <Collapse title="Équipement" content={item.equipments} />
+          <Collapse title="Équipements" content={item.equipments} />
         </div>
       </div>
     </main>

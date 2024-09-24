@@ -1,6 +1,6 @@
 import { useState } from "react";
-import openArrow from "../assets/open.png";
-import closeArrow from "../assets/close.png";
+import openArrow from "../assets/images/up.svg";
+import closeArrow from "../assets/images/down.svg";
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);

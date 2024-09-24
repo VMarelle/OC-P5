@@ -1,5 +1,3 @@
-import "../styles/index.css";
-
 function Card({ title, cover }) {
   return (
     <li className="kasa-apartment-card">

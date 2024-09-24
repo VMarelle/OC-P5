@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Json from "../json.json";
+import Json from "../data/json.json";
 import Rating from "./Rating";
 
 const Location = () => {

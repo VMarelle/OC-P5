@@ -1,5 +1,4 @@
-import "../styles/index.css";
-import imgBanner from "../assets/imgBannerAbout.svg";
+import imgBanner from "../assets/images/imgBannerAbout.svg";
 
 function BannerAbout() {
   return (

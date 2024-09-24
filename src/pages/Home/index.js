@@ -1,4 +1,4 @@
-import Json from "../../json.json";
+import Json from "../../data/json.json";
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
 import { Link } from "react-router-dom";

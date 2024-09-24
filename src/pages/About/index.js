@@ -1,4 +1,4 @@
-import Json from "../../json.json";
+import Json from "../../data/json.json";
 import BannerAbout from "../../components/BannerAbout";
 import Collapse from "../../components/Collapse";
 import AboutList from "../../aboutList.json";

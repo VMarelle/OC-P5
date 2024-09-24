@@ -1,5 +1,4 @@
-import "../styles/index.css";
-import headerLogo from "../assets/LogoOrangeBig.svg";
+import headerLogo from "../assets/images/LogoOrangeBig.svg";
 import { NavLink } from "react-router-dom";
 
 function Header() {

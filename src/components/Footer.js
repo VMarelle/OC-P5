@@ -1,5 +1,4 @@
-import footerLogo from "../assets/LogoBlanc.svg";
-import "../styles/index.css";
+import footerLogo from "../assets/images/LogoBlanc.svg";
 
 function Footer() {
   return (

@@ -1,6 +1,9 @@
-@import "./main.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
   .kasa-header {
     width: 86.111vw;
     display: flex;
@@ -13,10 +16,10 @@ body {
     }
     nav a {
       text-decoration: none;
-      font-size: 1.25vw;
+      font-size: 1.667vw;
       font-weight: 500;
       line-height: 34.22px;
-      padding-left: 2.969vw;
+      padding-left: 3.958vw;
       color: black;
       cursor: pointer;
     }
@@ -60,7 +63,7 @@ body {
     text-shadow: 0px 4px 4px black;
     position: absolute;
     top: 20%;
-    right: 23.5%;
+    right: 18.5%;
   }
 
   .home-list {
@@ -73,10 +76,9 @@ body {
 
   .apartment-list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    column-gap: 3.125vw;
-    row-gap: 2.604vw;
+    column-gap: 4.167vw;
+    row-gap: 3.472vw;
     padding-left: 3.472vw;
     padding-right: 3.472vw;
     padding-top: 2.917vw;
@@ -88,6 +90,7 @@ body {
     width: 23.611vw;
     height: 23.611vw;
     position: relative;
+    list-style-type: none;
   }
 
   .title-card {
@@ -119,7 +122,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.944vw;
+    gap: 3.472vw;
+    padding-top: 4.583vw;
   }
 
   .kasa-footer-elem {
@@ -165,7 +169,7 @@ body {
     img {
       object-fit: cover;
       width: 100%;
-      height: 223px;
+      height: 15.486vw;
       border-radius: 25px;
       box-shadow: 0px 4px 4px 0px #00000040;
       filter: brightness(0.9);
@@ -193,13 +197,16 @@ body {
     }
     button {
       position: absolute;
-      right: 0;
-      top: 25%;
+      right: 2%;
+      top: 35%;
       background-color: #ff6060;
       color: #ffffff;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      img {
+        width: 1.667vw;
+      }
     }
     &-open .desc {
       padding: 15px;
@@ -224,13 +231,19 @@ body {
     }
     button {
       position: absolute;
-      right: 0;
-      top: 4%;
+      right: 2%;
+      top: 8%;
       background-color: #ff6060;
       color: #ffffff;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      img {
+        width: 1.667vw;
+      }
+    }
+    .desc p {
+      font-size: 18px;
     }
   }
   .desc {
@@ -269,14 +282,14 @@ body {
 
     .nextBtn {
       position: absolute;
-      right: 1%;
-      bottom: 45%;
+      right: 2%;
+      bottom: 48%;
       z-index: 1;
     }
     .prevBtn {
       position: absolute;
-      left: 1%;
-      bottom: 45%;
+      left: 2%;
+      bottom: 48%;
       z-index: 1;
     }
   }
@@ -321,7 +334,10 @@ body {
       height: 25px;
       border-radius: 10px;
       background-color: #ff6060;
-      line-height: 19.96px;
+
+      padding-top: 2px;
+      padding-left: 1.528vw;
+      padding-right: 1.528vw;
     }
   }
 
@@ -350,13 +366,13 @@ body {
     right: 0;
     bottom: 5%;
     img {
-      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 
   .infos-location {
     width: 100%;
-    margin: 0 15.625vw 50px;
+    margin: 0 15.625vw 10px;
     display: flex;
     justify-content: space-between;
   }
@@ -385,10 +401,12 @@ body {
     }
     .desc {
       ul {
+        list-style: none;
         padding: initial;
       }
       li {
         padding-bottom: 5px;
+        font-size: 18px;
       }
     }
   }
@@ -407,38 +425,42 @@ body {
       img {
         width: 38.667vw;
       }
-
+      ul {
+        padding: 0;
+      }
       li {
         list-style-type: none;
       }
       nav a {
+        text-transform: uppercase;
         font-size: 3.2vw;
         padding-left: 6.933vw;
       }
     }
     /***********************************/
-    /*************HEADER****************/
+    /*************FOOTER****************/
     /***********************************/
     .kasa-footer {
-      gap: 2.667vw;
+      gap: 4vw;
     }
 
     .kasa-footer-elem {
       font-size: 3.2vw;
       font-weight: 500;
       color: white;
-      width: 24.624vw;
+      width: 35.467vw;
+      padding-left: 10.667vw;
     }
     /***********************************/
-    /*************FOOTER****************/
+    /************HOME PAGE*****************/
     /***********************************/
     .kasa-home {
-      margin-left: 5.333vw;
-      margin-right: 5.333vw;
       margin-bottom: 7.2vw;
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 89.333vw;
+      margin-left: 5.333vw;
     }
     .home-banner {
       width: 100%;
@@ -458,11 +480,11 @@ body {
       color: #ffffff;
       font-size: 6.4vw;
       font-weight: 700;
-      text-shadow: 0px 4px 4px black;
+      text-shadow: none;
       position: absolute;
       top: 10%;
-      right: 32.5%;
-      width: 54vw;
+      right: 25.5%;
+      width: 60vw;
       text-align: start;
     }
     .home-list {
@@ -502,8 +524,21 @@ body {
       border-radius: 10px;
     }
     /***********************************/
-    /*********HOME PAGE********************/
+    /***********LOCATION PAGE************/
     /***********************************/
+
+    .carrousel {
+      .pictures {
+        height: 68vw;
+      }
+      .prevBtn {
+        bottom: 51%;
+      }
+      .nextBtn {
+        bottom: 51%;
+      }
+    }
+
     .location-title {
       width: 100%;
       font-weight: 500;
@@ -529,9 +564,9 @@ body {
         align-items: center;
         color: #ffffff;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 10px;
         min-width: 84px;
-        height: 25px;
+        height: 18px;
         border-radius: 10px;
         background-color: #ff6060;
         line-height: 19.96px;
@@ -561,13 +596,12 @@ body {
       position: initial;
       margin-top: 6.4vw;
       img {
-        padding-left: 10px;
         width: 3.576vw;
       }
     }
     .infos-location {
       width: 100%;
-      margin: 20px 15.625vw 50px;
+      margin: 10px 15.625vw 0px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -583,6 +617,9 @@ body {
         font-weight: 700;
         font-size: 3.467vw;
       }
+      .desc p {
+        font-size: 12px;
+      }
     }
     .equipement-list {
       .info-bar {
@@ -596,11 +633,12 @@ body {
         font-size: 3.467vw;
       }
       .desc li {
+        font-size: 12px;
         padding-bottom: 5px;
       }
     }
     /***********************************/
-    /*********LOCATION PAGE********************/
+    /***********ABOUT PAGE***************/
     /***********************************/
 
     .about-banner {
@@ -629,6 +667,13 @@ body {
       h2 {
         font-size: 3.467vw;
       }
+      button {
+        top: 20%;
+        right: 2%;
+        img {
+          width: 4.267vw;
+        }
+      }
     }
     .info-bar-open {
       margin-bottom: 5.333vw;
@@ -636,9 +681,18 @@ body {
       h2 {
         font-size: 3.467vw;
       }
+      button {
+        top: 5%;
+        img {
+          width: 4.267vw;
+        }
+      }
+      .desc p {
+        font-size: 12px;
+      }
     }
     /***********************************/
-    /*********ABOUT PAGE********************/
+    /*********ERROR PAGE****************/
     /***********************************/
 
     .error-page {
@@ -652,83 +706,20 @@ body {
       p {
         font-size: 4.8vw;
         font-weight: 500;
-        line-height: 51.34px;
+        line-height: normal;
         text-align: center;
         color: #ff6060;
         margin-top: 30.133vw;
         margin-bottom: 30.133vw;
-        margin: 15.333vw;
+        .break {
+          display: block;
+        }
       }
       a {
         font-size: 3.733vw;
         font-weight: 500;
         margin-bottom: 30.133vw;
         cursor: pointer;
-      }
-    }
-    /***********************************/
-    /*********ERROR PAGE********************/
-    /***********************************/
-  }
-}
-
-/***********************************/
-/***********************************/
-/***********************************/
-/***********************************/
-/***********************************/
-/***********************************/
-
-@media all and (min-width: $mobile) and (max-width: $tablette) {
-  body {
-    & > header {
-    }
-    & > nav {
-    }
-    & > main {
-      & > section {
-      }
-      & > article {
-      }
-    }
-    & > footer {
-      & > ul {
-      }
-    }
-  }
-}
-@media all and (min-width: $desktop) and (max-width: $tv) {
-  body {
-    & > header {
-    }
-    & > nav {
-    }
-    & > main {
-      & > section {
-      }
-      & > article {
-      }
-    }
-    & > footer {
-      & > ul {
-      }
-    }
-  }
-}
-@media all and (min-width: $tv) {
-  body {
-    & > header {
-    }
-    & > nav {
-    }
-    & > main {
-      & > section {
-      }
-      & > article {
-      }
-    }
-    & > footer {
-      & > ul {
       }
     }
   }

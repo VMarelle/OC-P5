@@ -1,6 +1,6 @@
 import React from "react";
-import star from "../assets/star.png";
-import redStar from "../assets/starRed.png";
+import star from "../assets/images/star.svg";
+import redStar from "../assets/images/Redstar.svg";
 
 export default function Rating({ rating }) {
   const arr = [];
